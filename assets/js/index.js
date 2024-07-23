@@ -36,7 +36,7 @@ copyAddress.addEventListener('click', () => {
         clearTimeout(timeout);
         timeout = setTimeout(function () {
             btn.textContent = btnText;
-        }, 3000);
+        }, 2000);
     }).catch(function (err) {
         console.error('Failed to copy text: ', err);
     });
