@@ -270,7 +270,7 @@ footer{
    } 
   }
 
-  .hover_rotateBtn:hover{
+  .social a:hover .hover_rotateBtn{
    transform: rotate(380deg);
   }
 
