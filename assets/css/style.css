@@ -244,6 +244,35 @@ footer{
 		transform: translatey(0px);
 	}
 }
+.zoom_outIn{
+    animation:zoom_outIn 20s infinite linear;
+  }
+
+  .zoom_outIn_image{
+    animation:zoom_outIn_image 30s infinite linear;
+  }
+
+  @keyframes zoom_outIn {
+   0%,100%{
+       transform: scale(1);
+   } 
+   50%{
+       transform: scale(1.4);
+   } 
+  }
+
+  @keyframes zoom_outIn_image {
+   0%,100%{
+       transform: scale(1);
+   } 
+   50%{
+       transform: scale(1.1);
+   } 
+  }
+
+  .hover_rotateBtn:hover{
+   transform: rotate(380deg);
+  }
 
 
 
