@@ -20,7 +20,36 @@
 
 
     <style>
-      
+       .zoom_outIn{
+         animation:zoom_outIn 20s infinite linear;
+       }
+
+       .zoom_outIn_image{
+         animation:zoom_outIn_image 30s infinite linear;
+       }
+    
+       @keyframes zoom_outIn {
+        0%,100%{
+            transform: scale(1);
+        } 
+        50%{
+            transform: scale(1.4);
+        } 
+       }
+    
+       @keyframes zoom_outIn_image {
+        0%,100%{
+            transform: scale(1);
+        } 
+        50%{
+            transform: scale(1.1);
+        } 
+       }
+
+       .hover_rotateBtn:hover{
+        transform: rotate(380deg);
+       }
+
     </style>
  
     <div class="w-full min-h-[100vh] h-auto bg-[#061B35] max-w-[100%] absolute overflow-hidden">
@@ -74,10 +103,10 @@
                 data-aos-delay="200">
 
                 <div class="social flex items-center relative  gap-[1rem]">
-                    <a href="#twitter" class="rounded-full border-[1px] border-[#FFFFFF4D] w-[40px] md:w-[55px] lg:w-[70px] h-[40px] md:h-[55px] lg:h-[70px] flex justify-center items-center duration-300 ease-in hover:scale-110">
+                    <a href="#twitter" class="rounded-full border-[1px] border-[#FFFFFF4D] w-[40px] md:w-[55px] lg:w-[70px] h-[40px] md:h-[55px] lg:h-[70px] flex justify-center items-center duration-300 ease-in hover_rotateBtn">
                         <img src="./assets/images/twitterIcon.svg" alt="twitterIcon" class="w-[50%] h-auto object-contain">
                     </a>
-                    <a href="#telegram" class="rounded-full border-[1px] border-[#FFFFFF4D] w-[40px] md:w-[55px] lg:w-[70px] h-[40px] md:h-[55px] lg:h-[70px] flex justify-center items-center duration-300 ease-in hover:scale-110">
+                    <a href="#telegram" class="rounded-full border-[1px] border-[#FFFFFF4D] w-[40px] md:w-[55px] lg:w-[70px] h-[40px] md:h-[55px] lg:h-[70px] flex justify-center items-center duration-300 ease-in hover_rotateBtn">
                         <img src="./assets/images/telegramIcon.svg" alt="telegramIcon" class="w-[50%] h-auto object-contain">
                     </a>
                 </div> 
@@ -123,7 +152,7 @@
            </nav>
 
             <!-- home -->
-            <section id="home" class="home w-full pb-[50px] xl:pb-0 h-auto relative flex items-center">
+            <section id="home" class="home w-full h-auto relative flex items-center">
 
                 <!-- background -->
                 <div class="bg-image imagehome w-full h-full absolute left-0 top-0 flex justify-center items-center"> 
@@ -150,18 +179,28 @@
 
                     <div class="left w-[100%] xl:w-[620px] min-[1600px]:w-[50vw] flex flex-col xl:pt-[200px] max-lg:items-center max-lg:px-[2rem] gap-[1.75rem] md:gap-[3rem] max-xl:text-center">
 
-                        <h1 class="uppercase leading-[1] collage_font text-[11vw] xl:text-[100px] min-[1700px]:text-[140px] ">make pepe <br> great again</h1>
-                        <p class="text-white text-[20px] xl:text-[30px]   relative w-full"> The father of Memes makes his returns! </p>
+                        <h1 class="uppercase leading-[1] collage_font text-[11vw] xl:text-[100px] min-[1700px]:text-[140px]" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="200">make pepe <br> great again</h1>
+                        <p class="text-white text-[20px] xl:text-[30px]   relative w-full" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"> The father of Memes makes his returns! </p>
 
-                        <a target="_blank" href="#"
-                            class="duration-300 relative bg-[#A4FF0A] w-[150px] h-[50px] md:w-[196px] md:h-[77px] min-[1600px]:w-[246px] min-[1600px]:h-[87px] rounded-full max-xl:mx-auto flex items-center justify-center">
+                        <div class="relative" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="600">
+                            <a target="_blank" href="#"
+                            class="duration-300 hover:scale-110 relative bg-[#A4FF0A] w-[150px] h-[50px] md:w-[196px] md:h-[77px] min-[1600px]:w-[246px] min-[1600px]:h-[87px] rounded-full max-xl:mx-auto flex items-center justify-center">
                             <p class="text-center text-black font-[700] md:text-[22px] ">BUY NOW</p>
                         </a>
+                        </div>
 
                     </div>
 
                     <div class="right relative xl:absolute bottom-0 right-0 w-full xl:w-[763px]">
-                        <img src="./assets/images/home_image.png" alt="popo" class="max-w-[100%] w-[1200px] bottom-0 relative xl:absolute xl:right-[-100px] h-auto object-cover">
+                        <img src="./assets/images/home_image.png" alt="popo" class="max-w-[100%] w-[1200px] bottom-0 relative xl:absolute xl:right-[-100px] h-auto object-cover" data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="600">
                     </div>
 
                 </div> 
@@ -198,8 +237,8 @@
             <section id="about" class="w-full pb-[50px]  xl:pb-0 h-auto relative flex items-center overflow-hidden">
 
                   <!-- background -->
-                  <div class="bg_texture absolute left-0 top-0">
-                    <img src="./assets/images/texture.png" alt="" class="w-full h-full object-cover opacity-5">
+                  <div class="bg_texture zoom_outIn absolute left-0 top-0">
+                    <img src="./assets/images/texture.png" alt="" class="w-full h-full object-cover opacity-5 ">
                 </div>
 
                   <div class="bg-image imagehome w-full h-full absolute left-0 top-0 flex justify-center items-center"> 
@@ -211,24 +250,41 @@
  
                 <div  class="content pt-[70px] md:pt-[100px] xl:pt-[0px] relative h-auto xl:h-[834px] w-full max-w-[1800px] xl:px-[2rem] mx-auto flex justify-between    flex-col-reverse xl:flex-row-reverse text-white  items-center">
 
-                    <div class="right max-w-[1100px] w-[100%] xl:w-[50%] min-[1600px]:w-[60vw] flex flex-col   max-xl:items-center max-xl:px-[2rem] gap-[1.75rem] md:gap-[3rem] max-xl:text-center  ">
+                    <div class="right max-w-[1100px] w-[100%] xl:w-[50%] min-[1600px]:w-[60vw] flex flex-col   max-xl:items-center max-xl:px-[2rem] gap-[1.75rem] md:gap-[3rem] max-xl:text-center  z-10">
 
-                        <h1 class="uppercase bold_stroke text-[#91CD2C] leading-[1] collage_font text-[12vw] xl:text-[100px] min-[1700px]:text-[128px] ">ABOUT $MPGA</h1>
-                        <p class="text-white text-[20px] xl:text-[28px] min-[1600px]:text-[32px]  relative w-full"> The Make Pepe Great Again movement puts the divided memecoin attention back onto PEPE. No dog nor cat comes close to the impact of Pepe during this bull cycle, and it further succeeeding only strengthens ETH - as Pepe is ETH, ETH is PEPE! MPGA!!!
+                        <h1 class="uppercase bold_stroke text-[#91CD2C] leading-[1] collage_font text-[12vw] xl:text-[100px] min-[1700px]:text-[128px]" data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        >ABOUT $MPGA</h1>
+                        <div class="text-white flex flex-col items-center xl:items-start text-[17px] xl:text-[28px] min-[1600px]:text-[32px]  relative w-full" data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        >
+                         <p> The Make Pepe Great Again movement puts the divided memecoin attention back onto PEPE. No dog nor cat comes close to the impact of Pepe during this bull cycle, and it further succeeeding only strengthens ETH - as Pepe is ETH, ETH is PEPE! MPGA!!!</p>
                         <br>    
                         <br>    
-                        CA:
-                         </p>
+                            <div class="flex copy-box  items-center max-lg:justify-center cursor-pointer gap-5 hover:border-b-[2px] hover:border-white mx-0 max-[400px]:text-[4vw]" data-address="0X00000000000000000dEaD">
+                                CA : <span class="copy-box__text  copy-box__btn">0X00000000000000000dEaD</span> 
+                                <img src="./assets/images/copyIcon.svg" alt="" class="w-[30px] h-auto object-contain">
+                            </div>
 
+                         </div>
+
+                      <div class="relative" data-aos="fade-left"
+                      data-aos-duration="1000"
+                      data-aos-delay="600">
                         <a target="_blank" href="#"
-                            class="duration-300 relative bg-[#A4FF0A] w-[150px] h-[50px] md:w-[196px] md:h-[77px] min-[1600px]:w-[246px] min-[1600px]:h-[87px] rounded-full flex items-center justify-center">
-                            <p class="text-center text-black font-[700] md:text-[22px] ">BUY NOW</p>
-                        </a>
+                        class="duration-300 hover:scale-110 relative bg-[#A4FF0A] w-[150px] h-[50px] md:w-[196px] md:h-[77px] min-[1600px]:w-[246px] min-[1600px]:h-[87px] rounded-full flex items-center justify-center">
+                        <p class="text-center text-black font-[700] md:text-[22px] ">BUY NOW</p>
+                    </a>
+                      </div>
 
                     </div>
 
-                    <div class="images relative xl:absolute bottom-0 left-0 w-full xl:w-[763px]">
-                        <img src="./assets/images/about_image.png" alt="popo" class="max-w-[100%] w-[1200px] bottom-0 relative xl:absolute xl:left-[-100px] h-auto object-cover">
+                    <div class="images relative xl:absolute bottom-0 left-0 w-full xl:w-[763px] float_animation" >
+                        <img src="./assets/images/about_image.png" alt="popo" class="max-w-[100%] w-[1200px] bottom-[-20px] relative xl:absolute xl:left-[-100px] h-auto object-cover" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="0">
                     </div>
 
                 </div> 
@@ -242,31 +298,43 @@
 
                     <div class="left max-w-[1100px] w-[100%] xl:w-[60%] min-[1400px]:w-[50%] min-[1600px]:w-[60vw] flex flex-col  max-xl:items-center max-xl:px-[2rem] gap-[.75rem] md:gap-[1rem] max-xl:text-center">
 
-                        <h1 class="uppercase bold_stroke text-[#A0FF00] leading-[1] collage_font text-[12vw] xl:text-[100px] min-[1700px]:text-[128px] ">TOKENOMICS</h1>
-                        <p class="text-white text-[20px] xl:text-[28px] min-[1600px]:text-[32px] font-bold relative w-full">Token Supply : 420,690,000,000
+                        <h1 class="uppercase bold_stroke text-[#A0FF00] leading-[1] collage_font text-[12vw] xl:text-[100px] min-[1700px]:text-[128px]" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="200">TOKENOMICS</h1>
+                        <p class="text-white text-[20px] xl:text-[28px] min-[1600px]:text-[32px] font-bold relative w-full" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="400">Token Supply : 420,690,000,000
                          </p> 
 
                          <div class="flex flex-col items-center xl:items-start w-full h-auto gap-[1rem] relative mt-[1rem] text-left">
 
-                            <div class="supply1 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]">
+                            <div class="supply1 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-delay="500">
                                 <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
                                 <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">0% Team  ( Fair Stealth Launch )
                                 </p> 
                             </div>
 
-                            <div class="supply2 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]">
+                            <div class="supply2 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-delay="600">
                                 <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
                                 <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">0%  Airdrop and Presale
                                 </p> 
                             </div>
 
-                            <div class="supply3 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]">
+                            <div class="supply3 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-delay="700">
                                 <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
                                 <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">100% Liquidity Burnt
                                 </p> 
                             </div>
 
-                            <div class="supply4 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]">
+                            <div class="supply4 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-delay="800">
                                 <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
                                 <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">0/0 Buy and Sell Tax
                                 </p> 
@@ -276,16 +344,19 @@
 
                     </div>
 
-                    <div class="right relative  bottom-0 left-0 w-full xl:w-[763px]  flex justify-center items-center">
+                    <div class="right relative  bottom-0 left-0 w-full xl:w-[763px]  flex justify-center items-center" data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="800">
                         <img src="./assets/images/chart-min.png" alt="popo" class="max-w-[100%] w-[70%] relative  h-auto object-cover">
                     </div>
 
                 </div> 
+
             </section>
 
             <!-- image -->
             <section class="w-full h-auto relative  flex items-center">
-                <img src="./assets/images/image_section.png" alt="section" class="w-[100%] h-auto object-contain mt-[-70px] xl:mt-[-200px]">
+                <img src="./assets/images/image_section.png" alt="section" class="w-[100%] h-auto object-contain mt-[-70px] xl:mt-[-200px] zoom_outIn_image"  >
             </section>
             
             <!-- how to buy -->
@@ -374,23 +445,23 @@
              <!-- footer -->
               <footer class=" w-full h-[500px] xl:h-[667px] relative flex justify-center items-center flex-col gap-10 xl:gap-[5rem] text-center px-[2rem] overflow-hidden">
 
-                <div class="bg_texture absolute left-0 top-0">
+                <div class="bg_texture zoom_outIn absolute left-0 top-0">
                     <img src="./assets/images/texture.png" alt="" class="w-full h-full object-cover opacity-5">
                 </div>
 
                 <h1 class="text-[67px] text-white bold_stroke collage_font">Socials</h1>
 
                 <div class="social flex items-center relative  gap-[1rem]">
-                    <a href="#twitter" class="rounded-full border-[1px] border-[#FFFFFF4D]  w-[70px] h-[70px] flex justify-center items-center duration-300 ease-in hover:scale-110">
+                    <a href="#twitter" class="rounded-full border-[1px] border-[#FFFFFF4D]  w-[70px] h-[70px] flex justify-center items-center duration-300 ease-in hover_rotateBtn">
                         <img src="./assets/images/twitterIcon.svg" alt="twitterIcon" class="w-[50%] h-auto object-contain">
                     </a>
-                    <a href="#telegram" class="rounded-full border-[1px] border-[#FFFFFF4D]  w-[70px] h-[70px] flex justify-center items-center duration-300 ease-in hover:scale-110">
+                    <a href="#telegram" class="rounded-full border-[1px] border-[#FFFFFF4D]  w-[70px] h-[70px] flex justify-center items-center duration-300 ease-in hover_rotateBtn">
                         <img src="./assets/images/telegramIcon.svg" alt="telegramIcon" class="w-[50%] h-auto object-contain">
                     </a>
                 </div> 
 
                 <p class="text-[#B8BFBA] xl:w-[966px] text-[18px] md:text-[22px]">
-                    $mPGA has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme 
+                    $MPGA has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme 
                 </p>
 
 

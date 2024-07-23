@@ -19,3 +19,26 @@ document.addEventListener('DOMContentLoaded', function () {
         video.play();
     }, true);
 });
+
+const copyAddress = document.querySelector('.copy-box');
+    
+let text = copyAddress.querySelector('.copy-box__text');
+let btn = copyAddress.querySelector('.copy-box__btn');
+let btnText = btn.textContent;
+let timeout;
+
+copyAddress.addEventListener('click', () => {
+
+
+    navigator.clipboard.writeText(text.textContent).then(function () {
+        btn.textContent = 'Copied';
+
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            btn.textContent = btnText;
+        }, 3000);
+    }).catch(function (err) {
+        console.error('Failed to copy text: ', err);
+    });
+    
+})
