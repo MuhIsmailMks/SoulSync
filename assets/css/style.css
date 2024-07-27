@@ -313,7 +313,8 @@ nav .social .media:hover {
 
   /* tokenomics */
   #tokenomics::before { 
-    width:120%; 
+    width:120%;    
+    height:70px;
   }
 }
 
