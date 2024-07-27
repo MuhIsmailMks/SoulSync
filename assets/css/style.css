@@ -178,6 +178,10 @@ nav .social .media:hover {
   background: linear-gradient(166.96deg, #FF359E -0.76%, #FF309C 90.6%);
 }
 
+.feature:hover img{
+  transform: scale(1.1);
+}
+
 /* token */
 .token_container{
   box-shadow: 13px 15px 0px 0px #10500C;
@@ -187,6 +191,22 @@ nav .social .media:hover {
   -webkit-text-stroke: 2px white; 
   text-shadow: 3px 8px 0px #148F0C;
 }
+
+#tokenomics::before {
+  content:'';
+  position:absolute;
+  height:100px;
+  width:110%;
+
+  top: 0;
+  margin-top: -2rem;
+  left: -50px;
+  background-image: url('../images/top_token.svg');
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+ 
+
 
 /* roadmap */
 .bold_stroke_roadmap {
