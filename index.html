@@ -20,105 +20,103 @@
 
 
     <style>
- 
+      .feature:hover img{
+        transform: scale(1.1);
+      }
     </style>
  
-    <div class="w-full min-h-[100vh] h-auto bg-[#061B35] max-w-[100%] absolute overflow-hidden">
+    <div class="w-full min-h-[100vh] h-auto bg-[#FF3BB9] max-w-[100%] absolute overflow-hidden">
        
             <!-- navbar -->
-            <nav   class="w-full z-[999] justify-center h-[80px] xl:h-[120px] absolute left-0 top-0 max-w-[100%]  flex items-center   ">
+            <nav   class="w-full z-[999] justify-center h-[80px] xl:h-[100px] absolute left-0 top-0 max-w-[100%]  flex items-center   ">
 
-            <div   class="nav_container px-[1rem] md:px-[2rem]  flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[2100px] ">
+                <div   class="nav_container px-[1rem] md:px-[2rem]  flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[3100px] ">
 
-                <div class="left flex relative z-10 justify-center items-center text-[white] text_nav text-[15px] md:text-[30px]" data-aos="fade-right"
-                data-aos-duration="800"
-                data-aos-delay="200">
+                    <div class="left flex relative z-10 justify-center items-center  text-[white] text_nav text-[15px] md:text-[30px]" data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="200">
 
-                    <div class="logo mr-[1rem]">
-                         <img src="./assets/images/logo.png" alt="" class="w-[100px] h-auto object-contain">
+                        <div class="logo mr-[1rem]">
+                            <img src="./assets/images/logo.png" alt="" class="w-[60px] md:w-[100px] h-auto object-contain">
+                        </div> 
+
+                    
+
+                    </div>
+
+                    <div class="center absolute left-0  top-0 h-full w-[100%] z-0 justify-center flex items-center "
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="300">
+
+                    <ul class="flex items-center absolute opacity-0 xl:opacity-100 xl:relative gap-[2rem] link_none">
+
+                        <li class="list-none"><a href="#home"
+                                class="text-[#fff] uppercase duration-200 ease-in text_nav text-[18px] tracking-[1px]">Home</a>
+                        </li>
+
+                        <li class="list-none"><a href="#about"
+                                class="text-[#fff] uppercase duration-200 ease-in text_nav text-[18px] tracking-[1px]">About</a>
+                        </li> 
+
+                        <li class="list-none"><a href="#roadmap"
+                                class="text-[#fff] uppercase duration-200 ease-in text_nav text-[18px] tracking-[1px]">roadmap</a>
+                        </li>
+    
+
+                    </ul>
+
+                    </div>
+
+                    <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]" data-aos="fade-left"
+                    data-aos-duration="800"
+                    data-aos-delay="200">
+
+                    <div class="social flex items-center relative  gap-[1rem]">
+                        <a href="https://x.com/home" target="_blank" class="w-[40px] md:w-[55px] lg:w-[56.35px] h-[40px] md:h-[55px] lg:h-[56.35px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
+                            <img src="./assets/images/twitter_nav.svg" alt="twitterIcon" class="w-[100%] h-auto object-contain  duration-200">
+                        </a>
+                        <a href="https://telegram.org/" target="_blank" class="w-[40px] md:w-[55px] lg:w-[56.35px] h-[40px] md:h-[55px] lg:h-[56.35px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
+                            <img src="./assets/images/telegram_nav.svg" alt="telegramIcon" class="w-full h-auto object-contain duration-200">
+                        </a>
+                        <a href="https://telegram.org/" target="_blank" class="w-[40px] md:w-[55px] lg:w-[56.35px] h-[40px] md:h-[55px] lg:h-[56.35px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
+                            <img src="./assets/images/sols_nav.svg" alt="telegramIcon" class="w-full h-auto object-contain duration-200">
+                        </a>
                     </div> 
 
-                
-
-                </div>
-
-                <div class="center absolute left-0  top-0 h-full w-[100%] z-0 justify-center flex items-center "
-                 data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="300">
-
-                <ul class="flex items-center absolute opacity-0 xl:opacity-100 xl:relative gap-[2rem] link_none">
-
-                    <li class="list-none"><a href="#home"
-                            class="text-[#C2C7D0] uppercaseduration-200 ease-in text_nav text-[18px] tracking-[1px]">Home</a>
-                    </li>
-
-                    <li class="list-none"><a href="#about"
-                            class="text-[#C2C7D0] uppercaseduration-200 ease-in text_nav text-[18px] tracking-[1px]">About</a>
-                    </li> 
-
-                    <li class="list-none"><a href="#tokenomics"
-                            class="text-[#C2C7D0] uppercaseduration-200 ease-in text_nav text-[18px] tracking-[1px]">Tokenomics</a>
-                    </li>
-
-                    <li class="list-none"><a href="#howToBuy"
-                        class="text-[#C2C7D0] uppercaseduration-200 ease-in text_nav text-[18px] tracking-[1px]">How To Buy</a>
-                    </li>
-
-                </ul>
-
-                </div>
-
-                <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]" data-aos="fade-left"
-                data-aos-duration="800"
-                data-aos-delay="200">
-
-                <div class="social flex items-center relative  gap-[1rem]">
-                    <a href="https://x.com/home" target="_blank" class="rounded-full border-[1px] border-[#FFFFFF4D] w-[40px] md:w-[55px] lg:w-[70px] h-[40px] md:h-[55px] lg:h-[70px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
-                        <img src="./assets/images/twitterIcon.svg" alt="twitterIcon" class="w-[50%] h-auto object-contain hover_rotateBtn duration-200">
-                    </a>
-                    <a href="https://telegram.org/" target="_blank" class="rounded-full border-[1px] border-[#FFFFFF4D] w-[40px] md:w-[55px] lg:w-[70px] h-[40px] md:h-[55px] lg:h-[70px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
-                        <img src="./assets/images/telegramIcon.svg" alt="telegramIcon" class="w-[50%] h-auto object-contain hover_rotateBtn duration-200">
-                    </a>
-                </div> 
-
-                    <div class="menu-button relative">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <div class="menu-button relative">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    
                     </div>
-                  
+
                 </div>
 
-            </div>
+                <div class="menu absolute duration-300 top-[110%] rounded-xl right-[2rem] px-[1.75rem] w-auto h-auto flex justify-center backdrop-blur-lg py-[2rem] bg-[#FE63C7]">
 
-            <div class="menu absolute duration-300 top-[100%] left-[0rem] w-[100%] h-auto flex justify-center border-t-[2px] border-[#002d44] bg-transparent backdrop-blur-lg py-[2rem]">
+                    <ul class="flex items-center  relative gap-[2rem] link_none flex-col justify-center ">
+                    
+                     <li class="list-none"><a href="#home"
+                            class="text-white uppercase duration-200 ease-in text_nav text-[14px] tracking-[1px]">Home</a>
+                    </li>
 
-                <ul class="flex items-center  relative gap-[2rem] link_none flex-col justify-center ">
+                     <li class="list-none"><a href="#about"
+                            class="text-white uppercase duration-200 ease-in text_nav text-[14px] tracking-[1px]">About</a>
+                    </li>
+
+                    <li class="list-none">
+                        <a href="#roadmap"
+                            class="text-white uppercase duration-200 ease-in text_nav text-[14px] tracking-[1px]">roadmap</a>
+                    </li>
+ 
+
                 
-               <li class="list-none"><a href="#home"
-                        class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]">Home</a>
-                </li>
+                                
+                    </ul>
 
-               <li class="list-none"><a href="#about"
-                        class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]">About</a>
-                </li>
-
-                <li class="list-none">
-                    <a href="#tokenomics"
-                        class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]">Tokenomics</a>
-                </li>
-
-                <li class="list-none">
-                    <a href="#howToBuy"
-                        class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]">How To Buy</a>
-                </li>
-
-              
-                            
-                </ul>
-
-            </div>
+                </div>
 
            </nav>
 
@@ -126,50 +124,56 @@
             <section id="home" class="home w-full h-auto relative flex items-center">
 
                 <!-- background -->
-                <div class="bg-image imagehome w-full h-full absolute left-0 top-0 flex justify-center items-center"> 
+                <div class="bg-image imagehome w-full h-full absolute left-[50%] translate-x-[-50%] top-0 flex justify-center items-center z-[0] max-w-[1950px]"> 
+                    
+                    <!-- hero img -->
+                     <img src="./assets/images/hero_bg1.svg" alt="" class="absolute left-0 top-0 w-full xl:w-[50%] h-auto object-contain">
 
-                    <div class="bg_video w-[110vw] h-[110%] absolute left-[-1%] top-0">
+                     <img src="./assets/images/hero_bg2.svg" alt="" class="absolute left-[-10%] bottom-[-20%] max-w-[900px] w-[70%] xl:w-[40%] h-auto object-contain">
 
-                        <!-- right  -->
-                        <div class="bg_shadow absolute right-[40%] lg:right-[23%] top-[55%] lg:top-[35%] w-[20px] lg:h-[100px] h-[20px] lg:w-[100px] bg-[#541F32CC] rounded-full"></div>
-
-                        <div class="bg_shadow absolute  right-[13%] top-[35%]  lg:h-[60px]  lg:w-[60px] bg-[#541F32CC] rounded-full max-lg:hidden"></div>
-                        <!-- left -->
-                        <div class="bg_shadow absolute left-[-10%] top-[5%] w-[20px] lg:h-[100px] h-[20px] lg:w-[100px] bg-[#541F32CC] rounded-full"></div>
-
-                        <!-- video -->
-                        <video class="videoAutoPlay absolute top-0 w-[110vw] h-full xl:h-full object-cover opacity-[0.03]" autoplay loop muted playsinline>
-                            <source src="./assets/american_flag.mp4" type="video/mp4"> 
-                        </video>
-
-                    </div>
+                    <!-- rotate image -->
+                    <img src="./assets/images/rotate_img.svg" alt="" class="absolute  w-[100vw] md:w-[1000px] h-[100vw] md:h-[1000px] object-contain z-10 top-[50%] xl:top-0 xl:right-[-10%] rotate_animation">
         
                 </div>
 
-                <div  class="content pt-[100px] xl:pt-[0px] relative h-auto xl:h-[834px] w-full max-w-[1800px] xl:px-[2rem] mx-auto flex justify-between    flex-col xl:flex-row text-white  ">
+                <div  class="content pt-[100px] xl:pt-[0px] relative h-auto xl:h-[1000px] w-full max-w-[1800px] xl:px-[2rem] mx-auto flex justify-between   flex-col xl:flex-row text-white  ">
 
-                    <div class="left w-[100%] xl:w-[620px] min-[1600px]:w-[50vw] flex flex-col xl:pt-[200px] max-lg:items-center max-lg:px-[2rem] gap-[1.75rem] md:gap-[3rem] max-xl:text-center">
+                    <!-- hero content -->
+                    <div class="left w-[100%] xl:w-[620px] min-[1600px]:w-[50vw] xl:pl-[3rem] flex flex-col xl:pt-[200px]   max-lg:px-[2rem] gap-[1.75rem] md:gap-[0rem] max-xl:text-center max-xl:items-center">
 
-                        <h1 class="uppercase leading-[1] collage_font text-[11vw] xl:text-[100px] min-[1700px]:text-[140px]" data-aos="fade-right"
+                        <h1 class="uppercase bold_stroke leading-[1]  text-[21vw] xl:text-[160px] min-[1700px]:text-[185.81px]" data-aos="fade-right"
                         data-aos-duration="1000"
-                        data-aos-delay="200">make pepe <br> great again</h1>
-                        <p class="text-white text-[20px] xl:text-[30px]   relative w-full" data-aos="fade-right"
+                        data-aos-delay="200">Mama</h1>
+                        <p class="text-white leading-[1] text-[60px] xl:text-[89.96px] medium_stroke  relative w-full" data-aos="fade-right"
                         data-aos-duration="1000"
-                        data-aos-delay="400"> The father of Memes makes his returns! </p>
+                        data-aos-delay="400"> pepe’s Mother</p>
 
-                        <div class="relative" data-aos="fade-right"
+                        <div class="relative mt-[1.5rem] lg:mt-[3rem] flex_align_center gap-[1rem]" data-aos="fade-right"
                         data-aos-duration="1000"
                         data-aos-delay="600">
                             <a href="#"
-                            class="duration-300 hover:scale-110 relative bg-[#A4FF0A] w-[150px] h-[50px] md:w-[196px] md:h-[77px] min-[1600px]:w-[246px] min-[1600px]:h-[87px] rounded-full max-xl:mx-auto flex items-center justify-center">
-                            <p class="text-center text-black font-[700] md:text-[22px] ">BUY NOW</p>
-                        </a>
+                            class="duration-300 btn_shadow hover:scale-110 relative bg-[#FFCBCD] w-[130px] h-[45px] md:w-[166px] md:h-[57px] min-[1800px]:w-[196px] min-[1800px]:h-[78px] rounded-lg max-xl:mx-auto flex items-center justify-center">
+                            <p class="text-center text-black font-[700] md:text-[18px] min-[1800px]:text-[21px]">BUY NOW</p>
+                           </a>
+                           <a href="https://www.dextools.io/" target="_blank"
+                           class="duration-300 btn_shadow hover:scale-110 relative bg-[#fff] w-[130px] h-[45px] md:w-[166px] md:h-[57px] min-[1800px]:w-[196px] min-[1800px]:h-[78px] rounded-lg max-xl:mx-auto flex items-center justify-center">
+                           <p class="text-center text-[#F0000C] font-[700] md:text-[18px] min-[1800px]:text-[21px]">DEXTOOLS</p>
+                          </a>
+                        </div>
+
+                        <div class="relative mt-[1.5rem] lg:mt-[3rem] w-[90%] sm:w-[543px] h-[67px] md:h-[85px] border-[2px] border-[#FFEAEA] max-[1200px]:mx-auto  rounded-lg flex_center">
+                            <div class="relative  w-[97%] h-[80%] border-[2px] bg-[#FF5CC5] border-[#FFEAEA] rounded-lg flex_between px-[1rem] text-[15px] lg:text-[21.83px]">
+                                <p>CA: </p>
+                                <span class="text_bold tracking-widest text_ellipsis max-sm:max-w-[70%] overflow-hidden copy-box__btn copy-box__text">01s7dfdekx014381048482i4u1kh</span>
+                                <img src="./assets/images/copy-icon.svg" alt="copy" class="w-[25px] md:w-[40px] cursor-pointer h-auto object-contain copy-box ">
+                            </div>
                         </div>
 
                     </div>
 
-                    <div class="right relative xl:absolute bottom-0 right-0 w-full xl:w-[763px]">
-                        <img src="./assets/images/home_image.png" alt="popo" class="max-w-[100%] w-[1200px] bottom-0 relative xl:absolute xl:right-[-100px] h-auto object-cover" data-aos="fade-up"
+                    <!-- image hero -->
+                    <div class="right relative xl:absolute bottom-0 right-0 w-full max-[1000px]:mt-[2rem] xl:w-[763px] flex justify-center">
+                        <img src="./assets/images/hero-img.png" alt="popo" class="max-w-[100%] w-[60%] md:w-[600px] bottom-0 relative xl:absolute h-auto object-cover" data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="600">
                     </div>
@@ -178,292 +182,250 @@
 
             </section>
 
-             <!-- text slider -->
-             <section class="relative bg-[#44538499] w-full h-auto max-w-[100%] z-[100] collage_font"> 
-
-                <div class="text_slide_container w-full flex justify-end items-center xl:h-auto relative"> 
-                 
-                     <div class="marquee_container relative  left-0 bottom-0 w-full h-auto">
-                         <div class="marquee bordered  marquee-left">
-                             <div class="marquee-el" style="animation-duration: 75s;">
-                                 <p>
-                                     <span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span>
-                                     <span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span>
-                                 </p>
-                             </div>
-                             <div class="marquee-el" style="animation-duration: 75s;">
-                                 <p>
-                                     <span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span>
-                                     <span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span><span>$MPGA</span>
-                                 </p>
-                             </div>
-                         </div>
-                     </div>
-             
-                 </div>
-     
-             </section>
-
-               <!-- about -->
-            <section id="about" class="w-full pb-[50px]  xl:pb-0 h-auto relative flex items-center overflow-hidden">
-
-                  <!-- background -->
-                  <div class="bg_texture zoom_outIn absolute left-0 top-0">
-                    <img src="./assets/images/texture.png" alt="" class="w-full h-full object-cover opacity-5 ">
-                </div>
-
-                  <div class="bg-image imagehome w-full h-full absolute left-0 top-0 flex justify-center items-center"> 
-
-                     <!-- right  --> 
-                     <div class="bg_shadow_about absolute  right-0 bottom-[-10%]  lg:h-[60px]  lg:w-[60px] bg-[#0A343DC7] rounded-full opacity-60 "></div> 
+            <!-- about -->
+            <section  id="about" class="about w-full  relative flex_center_alignEnd h-[500px] min-[500px]:h-[100vw] xl:h-[100vw] min-[2400px]:h-[60vw] max-h-[2000px] overflow-hidden">
  
-                </div>
- 
-                <div  class="content pt-[70px] md:pt-[100px] xl:pt-[0px] relative h-auto xl:h-[834px] w-full max-w-[1800px] xl:px-[2rem] mx-auto flex justify-between    flex-col-reverse xl:flex-row-reverse text-white  items-center">
+                <!-- content -->
+                 <div class="w-full max-w-[2000px] h-auto relative z-10 flex justify-center  ">
 
-                    <div class="right max-w-[1100px] w-[100%] xl:w-[50%] min-[1600px]:w-[60vw] flex flex-col   max-xl:items-center max-xl:px-[2rem] gap-[1.75rem] md:gap-[3rem] max-xl:text-center  z-10">
+                    <!-- bg top -->
+                    <img src="./assets/images/about_top_img.svg" alt="" class="w-full h-auto object-cover absolute top-[-20vw]">
 
-                        <h1 class="uppercase bold_stroke text-[#91CD2C] leading-[1] collage_font text-[12vw] xl:text-[100px] min-[1700px]:text-[128px]" data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="200"
-                        >ABOUT $MPGA</h1>
-                        <div class="text-white flex flex-col items-center xl:items-start text-[17px] xl:text-[28px] min-[1600px]:text-[32px]  relative w-full" data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="400"
-                        >
-                         <p> The Make Pepe Great Again movement puts the divided memecoin attention back onto PEPE. No dog nor cat comes close to the impact of Pepe during this bull cycle, and it further succeeeding only strengthens ETH - as Pepe is ETH, ETH is PEPE! MPGA!!!</p>
-                        <br>    
-                        <br>    
-                            <div class="flex copy-box  items-center max-lg:justify-center cursor-pointer gap-5 hover:border-b-[2px] hover:border-white mx-0 max-[400px]:text-[4vw]" data-address="0X00000000000000000dEaD">
-                                CA : <span class="copy-box__text  copy-box__btn">0X00000000000000000dEaD</span> 
-                                <img src="./assets/images/copyIcon.svg" alt="" class="w-[30px] h-auto object-contain">
+                  
+                    <!-- bg callender-->
+                     <!-- desktop -->
+                    <img src="./assets/images/callender.svg" alt="" class="w-full h-auto object-cover relative hidden min-[1000px]:block">
+                    <!-- mobile -->
+                    <img src="./assets/images/callender_mobile.svg" alt="" class="w-full min-w-[430px] h-auto object-cover relative block min-[1000px]:hidden">
+
+                    <!-- about img -->
+                     <img src="./assets/images/about-img.png" alt="" class="absolute w-[100px] min-[500px]:w-[200px] lg:w-[300px] xl:w-[35%] h-auto object-contain bottom-0 left-[5%] z-20">
+
+                    <!-- about content -->
+                     <div class="w-[90%] h-[80%] min-[1000px]:h-[60%] bottom-0 absolute z-10 flex items-center flex-col">
+                        
+                          <!-- bg decor -->
+                         <img src="./assets/images/decor_about.svg" alt="" class="w-[80px] md:w-[150px] lg:w-[300px] h-auto object-cover absolute top-[-100px] lg:top-[-200px] left-0">
+
+                        <!-- about -->
+                        <h1 class="bold_stroke uppercase text-white text-[10vw] xl:text-[150px]">About</h1>
+
+                        <div class="text-center w-[80%] text-[11px] md:text-[19px] min-[1600px]:text-[28px] capitalize text-[#5C5154] flex_col gap-[1rem] lg:gap-[2rem] text_bold_grey">
+                            <p class="w-full">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type a
+                            </p>
+
+                            <p class="w-full">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type a
+                            </p>
+
+                        </div>
+
+                           <!-- feature -->
+                      <div class="w-[80%] relative flex flex-col items-end mt-[1rem] lg:mt-[4rem] min-[1900px]:mt-[10em]">
+
+                        <div class="w-[80%] min-[1000px]:w-[50%] min-[1500px]:w-[60%] flex_col lg:gap-[1rem]">
+
+                            <h2 class="medium_stroke text-white text-[8vw] leading-[1] md:text-[40px] xl:text-[110px] min-[1500px]:text-[120px]">Featured on</h2>
+                            
+                            <div class="w-full flex_align_center gap-[1.5rem]">
+                                <a href="https://www.dextools.io/" target="_blank" class="relative cursor-pointer feature">
+                                    <img src="./assets/images/dex.png" alt="" class="h-[55px] w-auto object-contain duration-200">
+                                </a>
+                                <a href="https://www.dextools.io/" target="_blank" class="relative cursor-pointer feature">
+                                    <img src="./assets/images/coinmarket.png" alt="" class="h-[55px] w-auto object-contain duration-200">
+                                </a>
+                                <a href="https://www.dextools.io/" target="_blank" class="relative cursor-pointer feature">
+                                    <img src="./assets/images/gotbit.png" alt="" class="h-[55px] w-auto object-contain duration-200">
+                                </a>
+                                <a href="https://www.dextools.io/" target="_blank" class="relative cursor-pointer feature">
+                                    <img src="./assets/images/dexscreen.png" alt="" class="h-[55px] w-auto object-contain duration-200">
+                                </a>
                             </div>
-
-                         </div>
-
-                      <div class="relative" data-aos="fade-left"
-                      data-aos-duration="1000"
-                      data-aos-delay="600">
-                        <a href="#"
-                        class="duration-300 hover:scale-110 relative bg-[#A4FF0A] w-[150px] h-[50px] md:w-[196px] md:h-[77px] min-[1600px]:w-[246px] min-[1600px]:h-[87px] rounded-full flex items-center justify-center">
-                        <p class="text-center text-black font-[700] md:text-[22px] ">BUY NOW</p>
-                    </a>
+                        </div>
                       </div>
 
-                    </div>
 
-                    <div class="images relative xl:absolute bottom-0 left-0 w-full xl:w-[763px] float_animation" >
-                        <img src="./assets/images/about_image.png" alt="popo" class="max-w-[100%] w-[1200px] bottom-[-20px] relative xl:absolute xl:left-[-100px] h-auto object-cover" data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="0">
-                    </div>
+                     </div>
 
-                </div> 
+                  
+                 </div>
 
             </section>
 
-               <!-- tokenomics -->
-            <section id="tokenomics" class="tokenomics  w-full h-auto relative flex items-center max-lg:pb-[100px]">
- 
-                <div  class="content pt-[70px] md:pt-[100px] xl:pt-[0px] relative h-auto xl:h-[734px] w-full max-w-[1800px] xl:px-[4rem] mx-auto flex justify-between    flex-col-reverse items-center xl:flex-row text-white gap-[2rem] ">
+            <!-- tokenomics -->
+             <section id="tokenomics" class="w-full h-[850px] md:h-[900px] bg-[#008000] flex_center relative z-10">
 
-                    <div class="left max-w-[1100px] w-[100%] xl:w-[60%] min-[1400px]:w-[50%] min-[1600px]:w-[60vw] flex flex-col  max-xl:items-center max-xl:px-[2rem] gap-[.75rem] md:gap-[1rem] max-xl:text-center">
+                 <!-- border -->
+                 <img src="./assets/images/top_token.svg" alt="" class="absolute left-[-5%] top-[-10px] lg:top-[-50px] min-w-[1000px] lg:min-w-[2500px] min-[3000px]:min-w-[10000px] w-[150vw] object-cover">
 
-                        <h1 class="uppercase bold_stroke text-[#A0FF00] leading-[1] collage_font text-[12vw] xl:text-[100px] min-[1700px]:text-[128px]" data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="200">TOKENOMICS</h1>
-                        <p class="text-white text-[20px] xl:text-[28px] min-[1600px]:text-[32px] font-bold relative w-full" data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="400">Token Supply : 420,690,000,000
-                         </p> 
+                 <img src="./assets/images/bottom_token.svg" alt="" class="absolute left-[-5%] bottom-[-10px] lg:bottom-[-50px] min-w-[1000px] lg:min-w-[2500px] min-[3000px]:min-w-[10000px] w-[150vw] object-cover">
 
-                         <div class="flex flex-col items-center xl:items-start w-full h-auto gap-[1rem] relative mt-[1rem] text-left">
+                <!-- bg -->
+                 <img src="./assets/images/bg_token1.svg" alt="" class="absolute left-[-200px] top-0 w-[500px] object-contain h-auto">
 
-                            <div class="supply1 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
-                            data-aos-duration="1000"
-                            data-aos-delay="500">
-                                <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
-                                <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">0% Team  ( Fair Stealth Launch )
-                                </p> 
-                            </div>
+                 <img src="./assets/images/bg_token2.svg" alt="" class="absolute right-[-100px] md:right-[-250px] bottom-0 w-[500px] object-contain h-auto">
 
-                            <div class="supply2 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
-                            data-aos-duration="1000"
-                            data-aos-delay="600">
-                                <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
-                                <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">0%  Airdrop and Presale
-                                </p> 
-                            </div>
+                <!-- content -->
+                 <div class="token_container relative max-w-[90%] w-[1168px] h-[600.2px] rounded-[50px] bg-[#3FBE3F] flex_center max-[1000px]:flex-col-reverse max-[1000px]:gap-[3rem]">
 
-                            <div class="supply3 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
-                            data-aos-duration="1000"
-                            data-aos-delay="700">
-                                <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
-                                <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">100% Liquidity Burnt
-                                </p> 
-                            </div>
+                     <!-- bg decor -->
+                    <img src="./assets/images/decor_token.svg" alt="" class="w-[80px] md:w-[150px] xl:w-[200px] h-auto object-cover absolute top-[-50px] right-[-20px] lg:right-[-50px]">
+                       
+                    <!-- left -->
+                    <div class="w-[80%] lg:w-[65%] relative h-auto lg:pl-[3rem] max-[1000px]:text-center">
+                        <h1 class="uppercase bold_stroke_token text-white text-[40px] lg:text-[100px]">tokenomics</h1>
+                        <div class="flex flex-col mt-[1.5rem] lg:mt-[2rem] gap-[1rem] text-[#F3F3F3] text-[16px] lg:text-[39.48px] max-w-[90%] w-[338.51px] max-[1000px]:mx-auto">
+                            <p>40% liquidity</p>
+                            <span class="w-full h-auto relative">
+                                <img src="./assets/images/lines.svg" alt="" class="w-full h-auto object-cover">
+                            </span>
+                            <p>40% airdrop</p>
+                            <span class="w-full h-auto relative">
+                                <img src="./assets/images/lines.svg" alt="" class="w-full h-auto object-cover">
+                            </span>
+                            <p>20% marketing</p>
+                            <span class="w-full h-auto relative">
+                                <img src="./assets/images/lines.svg" alt="" class="w-full h-auto object-cover">
+                            </span>
+                        </div>
+                    </div>
 
-                            <div class="supply4 flex items-center flex-wrap max-lg:w-full   relative gap-[1.5rem]" data-aos="fade-right"
-                            data-aos-duration="1000"
-                            data-aos-delay="800">
-                                <span class="rounded-[8.61px] w-[61.89px] h-[23.67px]"></span>
-                                <p class="text-white  text-[15px] md:text-[21px] xl:text-[28px] min-[1600px]:text-[32px]  ">0/0 Buy and Sell Tax
-                                </p> 
-                            </div>
+                    <!-- right -->
+                    <div class="w-[50%] lg:w-[30%] relative h-auto flex_center">
+                        <img src="./assets/images/tokenomics_chart.svg" alt="" class="w-[300px] h-auto object-contain">
+                    </div>
 
+                 </div>
+
+             </section>
+
+             <!-- roadmap -->
+              <section id="roadmap" class="bg-[#2FB926] relative h-[1750px] lg:h-[1100px] pt-[5rem] lg:pt-[10em] flex items-center flex-col">
+                
+                <!-- title -->
+                <h1 class="text-white bold_stroke_roadmap text-center text-[60px] lg:text-[120px]">ROADMAP</h1>
+
+                <!-- phases -->
+                 <div class="phase_container w-full flex_center flex-wrap h-auto gap-[2rem] min-[1500px]:gap-[3.5rem]">
+                    
+                    <div class="phase max-w-[95%] w-[383.82px] h-[383.82px] flex_center relative">
+                        
+                        <!-- bg -->
+                         <img src="./assets/images/phase_bg.svg" alt="" class="w-full h-full object-contain">
+
+                        <!-- content -->
+                         <div class="absolute h-full w-full flex_center flex-col text-[#FFFFFF]">
+                            <h1 class="text-[40px] absolute top-[90px]">PHASE 1</h1>
+                            <ul class="w-[80%] text-left text-[18px] absolute bottom-[30px]">
+                                <li>• Website & Social Media Launch </li>
+                                <li>• TGE, DEx Listing & LP Lock</li>
+                                <li>• Birdeye/DEXScreener/DEXTools Update</li>
+                                <li>• Airdrop Active Wallets</li>
+                                <li>• Initial Marketing Campaigns</li>
+                                <li>• Tokenomics & Roadmap Release</li> 
+                            </ul>
                          </div>
 
                     </div>
 
-                    <div class="right relative  bottom-0 left-0 w-full xl:w-[763px]  flex justify-center items-center" data-aos="fade-left"
-                    data-aos-duration="1000"
-                    data-aos-delay="800">
-                        <img src="./assets/images/chart-min.png" alt="popo" class="max-w-[100%] w-[70%] relative  h-auto object-cover">
+                    <div class="phase max-w-[95%] w-[383.82px] h-[383.82px] flex_center relative">
+                        
+                        <!-- bg -->
+                         <img src="./assets/images/phase_bg.svg" alt="" class="w-full h-full object-contain">
+
+                        <!-- content -->
+                         <div class="absolute h-full w-full flex_center flex-col text-[#FFFFFF]">
+                            <h1 class="text-[40px] absolute top-[90px]">PHASE 2</h1>
+                            <ul class="w-[80%] text-left text-[18px] absolute bottom-[30px]">
+                                <li>• Website & Social Media Launch</li>
+                                <li>• TGE, DEx Listing & LP Lock</li>
+                                <li>• Birdeye/DEXScreener/DEXTools Update</li>
+                                <li>• Airdrop Active Wallets</li>
+                                <li>• Initial Marketing Campaigns</li>
+                                <li>• Tokenomics & Roadmap Release</li>
+                            </ul>
+                         </div>
+
                     </div>
 
-                </div> 
+                    <div class="phase max-w-[95%] w-[383.82px] h-[383.82px] flex_center relative">
+                        
+                        <!-- bg -->
+                         <img src="./assets/images/phase_bg.svg" alt="" class="w-full h-full object-contain">
 
-            </section>
+                        <!-- content -->
+                         <div class="absolute h-full w-full flex_center flex-col text-[#FFFFFF]">
+                            <h1 class="text-[40px] absolute top-[90px]">PHASE 3</h1>
+                            <ul class="w-[80%] text-left text-[18px] absolute bottom-[30px]">
+                                <li>• Website & Social Media Launch</li>
+                                <li>• TGE, DEx Listing & LP Lock</li>
+                                <li>• Birdeye/DEXScreener/DEXTools Update</li>
+                                <li>• Airdrop Active Wallets</li>
+                                <li>• Initial Marketing Campaigns</li>
+                                <li>• Tokenomics & Roadmap Release</li>
+                            </ul>
+                         </div>
 
-            <!-- image -->
-            <section class="w-full h-auto relative  flex items-center">
-                <img src="./assets/images/image_section.png" alt="section" class="w-[100%] h-auto object-contain mt-[-70px] xl:mt-[-200px] zoom_outIn_image"  >
-            </section>
-            
-            <!-- how to buy -->
-             <section id="howToBuy" class=" w-full h-auto xl:h-[2400px] relative flex flex-col items-center  pt-[90px] max-xl:gap-12 pb-[300px] xl:pb-0">
-
-                <!-- image -->
-                 <div class="images z-0 absolute w-full h-full flex items-center justify-center left-0 top-0">
-
-                    <img src="./assets/images/how_to_buy_circle1.png" alt="how_to_buy" class="max-[400px]:w-[120px] w-[145px] lg:w-[400px] min-[2000px]:w-[500px] h-auto rounded-full absolute right-[-7%] min-[2000px]:right-[-5vw] top-[10%]" data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    data-aos-delay="200">
-
-                     <img src="./assets/images/how_to_buy_circle2.png" alt="how_to_buy" class="max-[400px]:w-[120px] w-[165px] lg:w-[300px] min-[2000px]:w-[400px] h-auto rounded-full absolute left-[-7%] min-[2000px]:left-[-5vw] top-[28%] xl:top-[30%]" data-aos="zoom-in"
-                     data-aos-duration="1000"
-                     data-aos-delay="300">
-
-                     <img src="./assets/images/how_to_buy_circle3.png" alt="how_to_buy" class="max-[400px]:w-[120px] w-[185px] lg:w-[300px] min-[2000px]:w-[400px] h-auto rounded-full absolute max-[500px]:right-[-5%] right-0 xl:right-[3%] min-[2000px]:right-[5vw] top-[47%] xl:top-[55%]" data-aos="zoom-in"
-                     data-aos-duration="1000"
-                     data-aos-delay="400">
-
-                     <div class="absolute w-full bottom-[-28vw] md:bottom-[-17%] flex justify-center" data-aos="fade-up"
-                     data-aos-duration="1000"
-                     data-aos-delay="200">
-                        <img src="./assets/images/how_to_buy_img.png" alt="how_to_buy" class="relative w-[70%] xl:w-[840px] zoom_outIn_image " >
-                     </div>
+                    </div>
 
                  </div>
 
-                 <!-- title -->
-                  <h1 class="bold_stroke text-center text-[12vw] xl:text-[67px] text-[#A0FF00] collage_font relative z-10" data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200">How to buy</h1>
+                 <!-- btns -->
+                  <div class="relative flex_center gap-[2rem] mt-[3rem] lg:mt-[10rem] z-10">
+                    <a href="https://telegram.org/" target="_blank"
+                    class="duration-300 btn_shadow hover:scale-110 relative roadmap_btn1 w-[130px] h-[45px] md:w-[166px] md:h-[57px] min-[1800px]:w-[196px] min-[1800px]:h-[78px] rounded-lg max-xl:mx-auto flex items-center justify-center">
+                    <p class="text-center uppercase text-white font-[700] md:text-[18px] min-[1800px]:text-[21px]">Telegram</p>
+                   </a>
+                   <a href="https://x.com/" target="_blank"
+                   class="duration-300 btn_shadow hover:scale-110 relative roadmap_btn2 w-[130px] h-[45px] md:w-[166px] md:h-[57px] min-[1800px]:w-[196px] min-[1800px]:h-[78px] rounded-lg max-xl:mx-auto flex items-center justify-center">
+                   <p class="text-center uppercase text-[#F0000C] font-[700] md:text-[18px] min-[1800px]:text-[21px]">twitter x</p>
+                  </a>
+                  </div>
 
-                  <!-- roadmap -->
-                   <div class="roadmap  relative max-w-[1350px] w-full flex flex-col items-center max-xl:text-center  text-[#A3C8BE] h-auto xl:h-2/3 max-xl:gap-[10px] mt-[50px] xl:mt-[100px]">
+                  <!-- background -->
+                   <div class="w-full flex_center h-[50%] absolute bottom-0 z-0 left-0">
 
-                    <!-- map1 -->
-                    <div class="map1 flex items-center gap-4 xl:gap-10 relative xl:absolute xl:left-[13%] xl:top-[10%] max-lg:flex-col">
+                    <img src="./assets/images/bg_roadmap1.svg" alt="" class="absolute bottom-[-10px] lg:bottom-[-190px] w-[150px] lg:w-[400px] h-auto object-contain">
 
-                        <img src="./assets/images/how1.png" alt="howto" class="w-[40%] md:w-[200px] h-auto object-contain">
-
-                        <div class=" w-[80%] md:w-[554px] h-auto relative flex flex-col gap-4 xl:gap-7" data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="200">
-                            <h3 class="text-[32px] text-white thin_stroke collage_font">Create a <span class="text-[#A0FF00]">Wallet</span></h3>
-                            <p class="w-full text-[18px] lg:text-[22px]">download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- line1 -->
-                    <div class="line w-[5px] h-[100px] xl:h-[325px] bg-[#92F90B] relative xl:absolute xl:left-[29%] xl:top-[21%] xl:rotate-[-35deg]"></div>
-                      
-                    <!-- map2 -->
-                    <div class="map2 flex items-center gap-4 xl:gap-10 relative xl:absolute xl:right-[7%] xl:top-[38%] max-lg:flex-col">
-
-                            <img src="./assets/images/how2.png" alt="howto" class="w-[40%] md:w-[200px] h-auto object-contain">
-    
-                            <div class=" w-[80%] md:w-[554px] h-auto relative flex flex-col gap-4 xl:gap-7" data-aos="fade-left"
-                            data-aos-duration="1000"
-                            data-aos-delay="200">
-                                <h3 class="text-[32px] text-white thin_stroke collage_font">get some <span class="text-[#A0FF00]">eth</span></h3>
-                                <p class="w-full text-[18px] lg:text-[22px]">have ETH in your wallet to switch to $MPGA. If you don’t have any ETH, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.</p>
-                            </div>
-    
-                    </div>
-
-                    <!-- line2 -->
-                    <div class="line w-[5px] h-[100px] xl:h-[290px] bg-[#92F90B] relative xl:absolute xl:left-[29%] xl:top-[47%] xl:rotate-[42deg]"></div>
-
-                     <!-- map3 -->
-                     <div class="map3 flex items-center gap-4 xl:gap-10 relative xl:absolute xl:left-[10%] xl:top-[60%] max-lg:flex-col">
-
-                        <img src="./assets/images/how3.png" alt="howto" class="w-[40%] md:w-[200px] h-auto object-contain">
-
-                        <div class=" w-[80%] md:w-[554px] h-auto relative flex flex-col gap-4 xl:gap-7" data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="200">
-                            <h3 class="text-[32px] text-white thin_stroke collage_font">Go to <span class="text-[#A0FF00]">Uniswap</span></h3>
-                            <p class="w-full text-[18px] lg:text-[22px]">Connect to Uniswap. Go to app.uniswap.org in google chrome or on the browser inside your Metamask app. Connect your wallet. Paste the $MPGA token address into Uniswap, select MPGA, and confirm.</p>
-                        </div>
-
-                     </div>
-
-                     <!-- line3 -->
-                     <div class="line w-[5px] h-[100px] xl:h-[330px] bg-[#92F90B] relative xl:absolute xl:left-[27%] xl:top-[72%] xl:rotate-[-32deg]"></div>
-
-                      <!-- map4 -->
-                      <div class="map4 flex items-center gap-4 xl:gap-10 relative xl:absolute xl:right-[10%] xl:top-[90%]  max-lg:flex-col">
-
-                        <img src="./assets/images/how4.png" alt="howto" class="w-[40%] md:w-[200px] h-auto object-contain">
-
-                        <div class=" w-[80%] md:w-[554px] h-auto relative flex flex-col gap-4 xl:gap-7" data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="200">
-                            <h3 class="text-[32px] text-white thin_stroke collage_font">Switch ETH for <span class="text-[#A0FF00]">$mpga</span></h3>
-                            <p class="w-full text-[18px] lg:text-[22px]">switch ETH for $MPGA. We have ZERO taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility.</p>
-                        </div>
-
-                     </div>
+                    <img src="./assets/images/rooadmap1.png" alt="" class="absolute left-[-50px] lg:left-[-100px] bottom-[-70px] lg:bottom-[-130px] w-[250px] lg:w-[500px] h-auto object-contain">
+                    <img src="./assets/images/rooadmap2.png" alt="" class="absolute right-[-100px] bottom-[-70px] lg:bottom-[-120px] w-[250px] lg:w-[500px] h-auto object-contain">
 
                    </div>
 
-             </section>
+              </section>
 
-             <!-- footer -->
-              <footer class=" w-full h-[500px] xl:h-[667px] relative flex justify-center items-center flex-col gap-10 xl:gap-[5rem] text-center px-[2rem] overflow-hidden">
+              <!-- footer -->
+               <footer class="w-full h-[250px] relative bg-[#008000] flex_center ">
+                   <!-- bg --> 
+                    <img src="./assets/images/bg_footer.svg" alt="" class="absolute left-[-1%] top-[-10vw] md:top-[-160px] min-w-[105vw] w-[110vw]  object-cover">
 
-                <div class="bg_texture zoom_outIn absolute left-0 top-0">
-                    <img src="./assets/images/texture.png" alt="" class="w-full h-full object-cover opacity-5">
-                </div>
+                    <!-- content -->
+                     <div class="flex_between w-[80%] h-auto text-white absolute z-10 top-[10%] md:top-[25%] flex-col md:flex-row max-[734px]:gap-[1.5rem]">
+                        <div class="logo flex_center">
+                            <img src="./assets/images/logo.png" alt="" class="w-[70px] h-auto object-contain">
+                            <h2 class="uppercase text-[31.95px]">Mother</h2>
+                        </div>
+                        <ul class="flex items-center gap-[1rem] text-[18px] uppercase">
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#tokenomics">tokenomics</a></li>
+                            <li><a href="#roadmap">roadmap</a></li>
+                        </ul>
+                        <div class="socials flex_center gap-[1rem]">
+                            <a href="https://x.com/home" target="_blank" class="w-[40px] md:w-[55px] lg:w-[56.35px] h-[40px] md:h-[55px] lg:h-[56.35px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
+                                <img src="./assets/images/twitter_footer.svg" alt="twitterIcon" class="w-[100%] h-auto object-contain  duration-200">
+                            </a>
+                            <a href="https://telegram.org/" target="_blank" class="w-[40px] md:w-[55px] lg:w-[56.35px] h-[40px] md:h-[55px] lg:h-[56.35px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
+                                <img src="./assets/images/telegram_footer.svg" alt="telegramIcon" class="w-full h-auto object-contain duration-200">
+                            </a>
+                            <a href="https://telegram.org/" target="_blank" class="w-[40px] md:w-[55px] lg:w-[56.35px] h-[40px] md:h-[55px] lg:h-[56.35px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
+                                <img src="./assets/images/solscan_footer.svg" alt="telegramIcon" class="w-full h-auto object-contain duration-200">
+                            </a>
+                        </div>
+                     </div>
 
-                <h1 class="text-[67px] text-white bold_stroke collage_font" data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200">Socials</h1>
-
-                <div class="social flex items-center relative  gap-[1rem]" data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="400">
-                    <a href="https://x.com/home" target="_blank" class="rounded-full border-[1px] border-[#FFFFFF4D]  w-[70px] h-[70px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
-                        <img src="./assets/images/twitterIcon.svg" alt="twitterIcon" class="w-[50%] h-auto object-contain hover_rotateBtn duration-200">
-                    </a>
-                    <a href="https://telegram.org/" target="_blank" class="rounded-full border-[1px] border-[#FFFFFF4D]  w-[70px] h-[70px] flex justify-center items-center duration-300 ease-in  hover:scale-110">
-                        <img src="./assets/images/telegramIcon.svg" alt="telegramIcon" class="w-[50%] h-auto object-contain hover_rotateBtn duration-200">
-                    </a>
-                </div> 
-
-                <p class="text-[#B8BFBA] xl:w-[966px] text-[18px] md:text-[22px]" data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="500">
-                    $MPGA has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme 
-                </p>
-
-
-              </footer>
-
+               </footer>
+ 
       </div>
 
     <!-- gsap -->

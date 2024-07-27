@@ -11,25 +11,15 @@ menu_btn.addEventListener('click', () => {
     menu_btn.classList.toggle('active')
     links.classList.toggle('active')
 })
-
-// autoplay video 
-document.addEventListener('DOMContentLoaded', function () {
-    let video = document.querySelector('.videoAutoPlay');
-    video.addEventListener('canplaythrough', function () {
-        video.play();
-    }, true);
-});
-
+ 
 const copyAddress = document.querySelector('.copy-box');
     
-let text = copyAddress.querySelector('.copy-box__text');
-let btn = copyAddress.querySelector('.copy-box__btn');
+let text = document.querySelector('.copy-box__text');
+let btn = document.querySelector('.copy-box__btn');
 let btnText = btn.textContent;
 let timeout;
 
-copyAddress.addEventListener('click', () => {
-
-
+copyAddress.addEventListener('click', () => { 
     navigator.clipboard.writeText(text.textContent).then(function () {
         btn.textContent = 'Copied';
 
