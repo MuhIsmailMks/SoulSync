@@ -310,6 +310,11 @@ nav .social .media:hover {
     width: 100%;  
     border-radius: 0 0 0px 0;
   }
+
+  /* tokenomics */
+  #tokenomics::before { 
+    width:120%; 
+  }
 }
 
 @media screen and (max-width: 500px) {
