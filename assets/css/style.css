@@ -268,7 +268,7 @@ nav .social .media:hover {
   transform: rotate(0deg);
 }
 100% { 
-  transform: rotate(380deg);
+  transform: rotate(360deg);
 } 
 }
 
