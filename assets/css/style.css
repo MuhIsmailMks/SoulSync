@@ -323,6 +323,11 @@ nav .social .media:hover {
         text-shadow: 0 3px 1px #A9226A;
       }
 
+      .medium_stroke {
+        -webkit-text-stroke: 1px #A9226A; 
+        text-shadow: 2px 3px 0px #A9226A;
+      }
+
   /* navbar */
   .menu-button {
     width: 27px;
